@@ -6,7 +6,7 @@
 }
 
 .containergraph {
-  
+
 }
 
 .container > div > img {
@@ -35,11 +35,12 @@
 }
 
 .container3 {
-display: grid;
-grid-gap: 20px;
-grid-template-columns: repeat(auto-fit, 300px);
+/*display: grid;
+grid-gap: 0px;
+grid-template-columns: repeat(auto-fit, 100px);
 grid-template-rows: repeat(2, 450px);
-justify-content: center;
+justify-content: center;*/
+
 }
 
 .container3 > img {
@@ -70,8 +71,8 @@ justify-content: center;
 p {
   text-align: left;
   font-family: 'Roboto', Arial, sans-serif;
-  padding-left: 420px;
-  padding-right: 420px;
+  padding-left: 550px;
+  padding-right: 550px;
 }
 
 h2 {
@@ -81,6 +82,18 @@ h2 {
   padding-right: 420px;
 }
 
-.tick line{
+/*.tick line{
   opacity: 0.05;
+}*/
+
+.axis {
+  font: 10px sans-serif;
+}
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+  stroke-width: 10px;
 }

@@ -506,7 +506,7 @@ var general=[
 
 
 
-	var svg = dimple.newSvg("body",900, 430);
+	var svg = dimple.newSvg("body",1000, 430);
 	var myChart = new dimple.chart(svg, general);
     //myChart.setBounds(80, 40, "75%", "60%");
 	var x = myChart.addTimeAxis("x", "Year","%Y-%m-%d","%Y");
@@ -523,7 +523,7 @@ var general=[
      new dimple.color("#000000", "#000000", 1), // red
  ];
 
-myChart.setMargins("450px", "10px", "0px", "20px");
+myChart.setMargins("575px", "10px", "0px", "20px");
 
 	//s.lineMarkers=true;
     myChart.draw();
