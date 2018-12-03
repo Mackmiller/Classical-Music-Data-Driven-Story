@@ -102,7 +102,7 @@ var monthly=[
 	var svg = dimple.newSvg("body",1000, 430);
 
 	var myChart = new dimple.chart(svg, monthly);
-    //myChart.setBounds(80, 40, "75%", "60%");
+    myChart.setBounds(80, 40, "75%", "60%");
 	var x = myChart.addTimeAxis("x", "Month","%B","%b");
 	x.showGridlines = true;
   x.timeField = "Month";

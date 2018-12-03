@@ -47,9 +47,20 @@ var ages=[
 myChart.setMargins("300px", "10px", "0px", "60px");
 x.timePeriod = d3.timeAge;
     x.timeInterval = 4;
-
+y.hidden = true;
 
 
     //y.tickFormat = "%";
 	//s.lineMarkers=true;
     myChart.draw();
+
+		s.shapes.each(function (d) {
+	 var rec = d3.select(this);
+	 svg.append("text")
+		 .attr("x", parseFloat(rec.attr("x")) + parseFloat(rec.attr("width") / 2))
+		 .attr("y", parseFloat(rec.attr("y")) - 5)
+		 .style("text-anchor", "middle")
+		 .style("font-family", "sans-serif")
+		 .style("font-size", "9px")
+		 .text(y._getFormat()(d.y));
+ });

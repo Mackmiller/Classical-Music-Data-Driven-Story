@@ -852,6 +852,7 @@ var Index =[
   var y2 =myChart.addMeasureAxis(y1, " Index");
   var y3 =myChart.addMeasureAxis(y1, "Index");
   y1.title = "Popularity Index";
+  x.timeInterval = 4;
 	/*y1.showGridlines=true;*/
   var s = myChart.addSeries("J.S. Bach", dimple.plot.line,[x,y1]);
   var s2 = myChart.addSeries("L. Beethoven", dimple.plot.line,[x,y2]);
@@ -864,6 +865,8 @@ var Index =[
      new dimple.color("#57575F", "#57575F", 1), // red
      new dimple.color("#CA3542", "#CA3542", 1)
  ];
+
+
 
 myChart.setMargins("575px", "10px", "0px", "20px");
 

@@ -32,7 +32,18 @@ var total=[
 myChart.setMargins("650px", "10px", "10px", "20px");
 x.timePeriod = d3.timeYear;
     y.timeInterval = 4;
-
+y.hidden = true;
     //y.tickFormat = "%";
 	//s.lineMarkers=true;
     myChart.draw();
+
+		s.shapes.each(function (d) {
+	 var rec = d3.select(this);
+	 svg.append("text")
+		 .attr("x", parseFloat(rec.attr("x")) + parseFloat(rec.attr("width") / 2))
+		 .attr("y", parseFloat(rec.attr("y")) - 5)
+		 .style("text-anchor", "middle")
+		 .style("font-family", "sans-serif")
+		 .style("font-size", "9px")
+		 .text(y._getFormat()(d.y));
+ });

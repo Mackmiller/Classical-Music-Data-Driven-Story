@@ -506,7 +506,7 @@ var general=[
 
 
 
-	var svg = dimple.newSvg("body",1000, 430);
+	var svg = dimple.newSvg("#chartContainer","100%", "100%");
 	var myChart = new dimple.chart(svg, general);
     //myChart.setBounds(80, 40, "75%", "60%");
 	var x = myChart.addTimeAxis("x", "Year","%Y-%m-%d","%Y");
@@ -514,7 +514,12 @@ var general=[
   x.timeField = "Year";
   var y =myChart.addMeasureAxis("y", "Index");
   y.title = "Popularity Index";
-	/*y1.showGridlines=true;*/
+    /*x.hidden = true;*/
+x.timeInterval = 4;
+y.ticks = 5;
+
+
+	/*y.showGridlines=true;*/
   var s = myChart.addSeries(null, dimple.plot.line,[x,y]);
 	//s.lineWeight=4;
 
@@ -523,7 +528,16 @@ var general=[
      new dimple.color("#000000", "#000000", 1), // red
  ];
 
-myChart.setMargins("575px", "10px", "0px", "20px");
+/*myChart.setMargins("50%", "10px", "10px", "20px");*/
+/*myChart.setMargins("20%", "10px", "50%", "20px");*/
+myChart.setMargins("30%", "10px", "30%", "20px");
+
+x.lineWeight = 0;
+
 
 	//s.lineMarkers=true;
-    myChart.draw();
+    myChart.draw(1500);
+
+    window.onresize = function () {
+                          myChart.draw(0, true);
+                        };

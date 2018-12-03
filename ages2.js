@@ -35,6 +35,7 @@ var ages2=[
   var y =myChart.addMeasureAxis("y", "Percent");
   y.title = "Percent";
   x.title = "Age: 2008"
+	y.hidden = true;
 	/*y1.showGridlines=true;*/
   var s = myChart.addSeries(null, dimple.plot.bar);
 	//s.lineWeight=4;
@@ -51,3 +52,14 @@ x.timePeriod = d3.timeAge;
     //y.tickFormat = "%";
 	//s.lineMarkers=true;
     myChart.draw();
+
+		s.shapes.each(function (d) {
+	 var rec = d3.select(this);
+	 svg.append("text")
+		 .attr("x", parseFloat(rec.attr("x")) + parseFloat(rec.attr("width") / 2))
+		 .attr("y", parseFloat(rec.attr("y")) - 5)
+		 .style("text-anchor", "middle")
+		 .style("font-family", "sans-serif")
+		 .style("font-size", "9px")
+		 .text(y._getFormat()(d.y));
+ });

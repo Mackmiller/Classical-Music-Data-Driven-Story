@@ -91,22 +91,13 @@ h2 {
    width: 35em;
 }
 
-/*.tick line{
-  opacity: 0.05;
-}*/
+
 
 .axis {
   font: 10px sans-serif;
+
 }
 
-.axis path,
 .axis line {
-  fill: none;
-  stroke: #000;
-  shape-rendering: crispEdges;
-  stroke-width: 10px;
-}
-
-svg {
-
+  stroke: white;
 }
