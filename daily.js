@@ -139,7 +139,7 @@ var svg = dimple.newSvg("#chartContainer4","100%", "100%");
 
  myChart.setMargins("30%", "10px", "30%", "20px");
 x.timeInterval = 4;
-
+myChart.addLegend(500, 10, 500, 20, "center");
  	//s.lineMarkers=true;
    myChart.draw(1500);
 
