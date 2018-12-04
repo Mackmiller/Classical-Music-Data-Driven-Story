@@ -112,7 +112,8 @@ var daily=[
 
 
 
-	var svg = dimple.newSvg("body",1200, 430);
+var svg = dimple.newSvg("#chartContainer4","100%", "100%");
+
 	var myChart = new dimple.chart(svg, daily);
     //myChart.setBounds(80, 40, "75%", "60%");
 	/*var x = =myChart.addMeasureAxis("x", "Time");*/
@@ -136,10 +137,12 @@ var daily=[
      new dimple.color("#CA3542", "#CA3542", 1)
  ];
 
-myChart.setMargins("400px", "10px", "20px", "100px");
+ myChart.setMargins("30%", "10px", "30%", "20px");
+x.timeInterval = 4;
 
+ 	//s.lineMarkers=true;
+   myChart.draw(1500);
 
-
-
-	//s.lineMarkers=true;
-    myChart.draw();
+   window.onresize = function () {
+                         myChart.draw(0, true);
+                       };

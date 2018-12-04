@@ -99,10 +99,10 @@ var monthly=[
 
 
 
-	var svg = dimple.newSvg("body",1000, 430);
+	var svg = dimple.newSvg("#chartContainer3","100%", "100%");
 
 	var myChart = new dimple.chart(svg, monthly);
-    myChart.setBounds(80, 40, "75%", "60%");
+    //myChart.setBounds(80, 40, "75%", "60%");
 	var x = myChart.addTimeAxis("x", "Month","%B","%b");
 	x.showGridlines = true;
   x.timeField = "Month";
@@ -134,7 +134,12 @@ var monthly=[
 
  ];
 
-myChart.setMargins("575px", "10px", "10px", "20px");
+ myChart.setMargins("30%", "10px", "30%", "20px");
 
-	//s.lineMarkers=true;
-    myChart.draw();
+
+ 	//s.lineMarkers=true;
+   myChart.draw(1500);
+
+   window.onresize = function () {
+                         myChart.draw(0, true);
+                       };

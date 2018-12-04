@@ -11,7 +11,7 @@ var total=[
 
 
 
-	var svg = dimple.newSvg("body",950, 230);
+	var svg = dimple.newSvg("#chartContainer5","50%", "50%");
 	var myChart = new dimple.chart(svg, total);
     //myChart.setBounds(80, 40, "75%", "60%");
   myChart.addCategoryAxis("x", ["Year"]);
@@ -29,7 +29,7 @@ var total=[
      new dimple.color("#000000", "#000000", 1), // red
  ];
 
-myChart.setMargins("650px", "10px", "10px", "20px");
+
 x.timePeriod = d3.timeYear;
     y.timeInterval = 4;
 y.hidden = true;
