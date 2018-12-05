@@ -541,3 +541,9 @@ x.lineWeight = 0;
     window.onresize = function () {
                           myChart.draw(0, true);
                         };
+
+
+                        s
+                      .attr("transform", `translate(${margin.left},0)`)
+                      .call(d3.axisLeft(y).ticks(8, "$.0f"))
+                      .call(s => s.select(".domain").remove())

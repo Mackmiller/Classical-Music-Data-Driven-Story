@@ -661,7 +661,7 @@ var Index =[
 
 
 
-	var svg = dimple.newSvg("#chartContainer6","100%", "100%");
+	var svg = dimple.newSvg("#chartContainer6","400%", "100%");
 	var myChart = new dimple.chart(svg, Index );
     //myChart.setBounds(80, 40, "75%", "60%");
 	var x = myChart.addTimeAxis("x", "Year","%Y-%m-%d","%Y");
@@ -673,7 +673,7 @@ var Index =[
   y1.title = "Popularity Index";
   x.timeInterval = 4;
 	/*y1.showGridlines=true;*/
-
+  y.hidden = true;
   var s2 = myChart.addSeries("L. Beethoven", dimple.plot.line,[x,y2]);
 
 	//s.lineWeight=4;
@@ -689,7 +689,7 @@ myChart.addLegend(500, 10, 500, 20, "center");
 
 /*myChart.setMargins("575px", "10px", "0px", "20px");*/
 
-myChart.setMargins("30%", "10px", "30%", "20px");
+myChart.setMargins("50px", "10px", "0px", "20px");
 
 
 	//s.lineMarkers=true;

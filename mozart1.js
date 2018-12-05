@@ -673,7 +673,7 @@ var Index =[
 
 
 
-	var svg = dimple.newSvg("#chartContainer7","100%", "100%");
+	var svg = dimple.newSvg("#chartContainer7","400%", "100%");
 	var myChart = new dimple.chart(svg, Index );
     //myChart.setBounds(80, 40, "75%", "60%");
 	var x = myChart.addTimeAxis("x", "Year","%Y-%m-%d","%Y");
@@ -698,7 +698,7 @@ myChart.addLegend(500, 10, 500, 20, "center");
 
 /*myChart.setMargins("575px", "10px", "0px", "20px");*/
 
-myChart.setMargins("30%", "10px", "30%", "20px");
+myChart.setMargins("50px", "10px", "0px", "20px");
 
 
 	//s.lineMarkers=true;
