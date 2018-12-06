@@ -7,9 +7,6 @@
     grid-template-rows: 500px;
 }
 
-.containergraph {
-
-}
 
 .container > div > img {
     width: 100%;
@@ -50,7 +47,8 @@ padding-bottom: 0px;
     width: 100%;
     height: 100%;
     object-fit: contain;
-    min-width: 600px;
+    min-width: 600px;;
+
 }
 
 	.dimple-custom-axis-title {
@@ -82,6 +80,7 @@ p {
   margin-left: auto;
    margin-right: auto;
    width: 35em;
+   min-width: 600px;;
 
 }
 
@@ -96,6 +95,7 @@ p.text1 {
    margin-right: auto;
    width: 35em;
    padding-top: 35px;
+   min-width: 600px;;
 
 }
 
@@ -110,6 +110,7 @@ h2 {
    margin-right: auto;
    width: 20em;
    padding-top: 25px;
+   min-width: 600px;;
 }
 
 
@@ -121,4 +122,8 @@ h2 {
 
 .axis line {
   stroke: white;
+}
+
+#chartcontainer {
+  min-width: 600px;;
 }
