@@ -530,7 +530,7 @@ y.ticks = 5;
 
 /*myChart.setMargins("50%", "10px", "10px", "20px");*/
 /*myChart.setMargins("20%", "10px", "50%", "20px");*/
-myChart.setMargins("350px", "10px", "30%", "20px");
+myChart.setMargins("50px", "10px", "30%", "20px");
 
 x.lineWeight = 0;
 
