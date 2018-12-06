@@ -98,12 +98,12 @@ p.text1 {
    min-width: 600px;;
 
 }
-@media screen and (max-width: 600px) {
+/*@media screen and (max-width: 600px) {
   p {
     max-width: 99px;
     text-align: center;
   }
-}
+}*/
 
 
 
