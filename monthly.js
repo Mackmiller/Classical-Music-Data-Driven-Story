@@ -134,7 +134,7 @@ var monthly=[
 
  ];
 
- myChart.setMargins("30%", "10px", "30%", "20px");
+ myChart.setMargins("350px", "10px", "30%", "20px");
 
 
  	//s.lineMarkers=true;
