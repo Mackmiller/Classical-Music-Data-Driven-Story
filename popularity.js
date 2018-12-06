@@ -530,7 +530,7 @@ y.ticks = 5;
 
 /*myChart.setMargins("50%", "10px", "10px", "20px");*/
 /*myChart.setMargins("20%", "10px", "50%", "20px");*/
-myChart.setMargins("30%", "10px", "30%", "20px");
+myChart.setMargins("100px", "10px", "30%", "20px");
 
 x.lineWeight = 0;
 
@@ -541,9 +541,3 @@ x.lineWeight = 0;
     window.onresize = function () {
                           myChart.draw(0, true);
                         };
-
-
-                        s
-                      .attr("transform", `translate(${margin.left},0)`)
-                      .call(d3.axisLeft(y).ticks(8, "$.0f"))
-                      .call(s => s.select(".domain").remove())
