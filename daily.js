@@ -117,7 +117,7 @@ var svg = dimple.newSvg("#chartContainer4","100%", "100%");
 	var myChart = new dimple.chart(svg, daily);
     //myChart.setBounds(80, 40, "75%", "60%");
 	/*var x = =myChart.addMeasureAxis("x", "Time");*/
-  var x = myChart.addTimeAxis("x", "Time", "%H:%M", "%H");
+  var x = myChart.addTimeAxis("x", "Time", "%H:%M", "%H:%M");
 	x.showGridlines = true;
   /*x.timeField = "Time";*/
   var y1 =myChart.addMeasureAxis("y", "Index ");
