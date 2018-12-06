@@ -98,6 +98,12 @@ p.text1 {
    min-width: 600px;;
 
 }
+@media screen and (max-width: 600px) {
+  p {
+    max-width: 99px;
+    text-align: center;
+  }
+}
 
 
 
@@ -122,8 +128,4 @@ h2 {
 
 .axis line {
   stroke: white;
-}
-
-#chartcontainer {
-  min-width: 600px;;
 }
