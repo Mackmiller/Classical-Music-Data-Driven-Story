@@ -122,7 +122,7 @@ var monthly=[
   var s6 = myChart.addSeries("Mozart 2017", dimple.plot.line,[x,y6]);
 	//s.lineWeight=4;
 
-  myChart.addLegend(500, 10, 500, 20, "center");
+//  myChart.addLegend(500, 10, 500, 20, "center");
   myChart.defaultColors = [
     new dimple.color("#3091B0", "#3091B0", .5), // purple
     new dimple.color("#57575F", "#57575F", .5), // orange
