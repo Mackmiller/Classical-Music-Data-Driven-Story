@@ -130,7 +130,7 @@ var svg = dimple.newSvg("#chartContainer4","100%", "100%");
   var s3 = myChart.addSeries("W.A. Mozart", dimple.plot.line,[x,y3]);
 	//s.lineWeight=4;
 
-//  myChart.addLegend(60, 10, 500, 20, "right");
+
   myChart.defaultColors = [
      new dimple.color("#3091B0", "#3091B0", 1),
      new dimple.color("#57575F", "#57575F", 1), // red
