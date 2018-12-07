@@ -136,8 +136,8 @@ var svg = dimple.newSvg("#chartContainer4","100%", "100%");
      new dimple.color("#57575F", "#57575F", 1), // red
      new dimple.color("#CA3542", "#CA3542", 1)
  ];
-
- myChart.setMargins("20%", "10px", "30%", "20px");
+myChart.addLegend(60, 10, 500, 20, "right");
+ myChart.setMargins("30%", "10px", "30%", "20px");
 x.timeInterval = 4;
 myChart.addLegend(500, 10, 500, 20, "center");
  	//s.lineMarkers=true;
