@@ -8,9 +8,7 @@ A data-driven story that explores Google trends search data involving the top cl
 
 ## Data
 
-- Data was sent from Google world trends for musical composers Bach, Beethoven and Mozart.
-
-- Data was sent from Google world trends for the general search term "classical music".
+- Data was sent from Google world trends for musical composers Bach, Beethoven and Mozart and for the general search term "classical music".
 
 - Data spans from 2004-2017.
 
