@@ -29,7 +29,7 @@ This project was built using D3.js, Dimple.js, HTML, and CSS.
 
 ## Contributors
 
-- [@mackmilllr](https://twitter.com/mackmilllr) Designer, Coder, Writer
+- [@mackmilllr](https://twitter.com/mackmilllr) Designer, Coder, Writer, Music Expert
 - [@artdelolo](https://twitter.com/ArtDeLolo) Graphics
 - [@albertocairo](https://twitter.com/AlbertoCairo) Advisor
 
