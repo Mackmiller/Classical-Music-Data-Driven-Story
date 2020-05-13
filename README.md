@@ -8,7 +8,7 @@ A data-driven story that explores Google trends search data involving the top cl
 
 ## Data
 
-- Data was sent from Google world trends for Bach, Beethoven and Mozart.
+- Data was sent from Google world trends for musical composers Bach, Beethoven and Mozart.
 
 - Data was sent from Google world trends for the general search term "classical music".
 
@@ -27,7 +27,6 @@ After seeing the CSV worksheet, I now had a basis for creating my research quest
 ## Code
 
 This project was built using D3.js, Dimple.js, HTML, and CSS.
-
 
 
 ## Contributors
