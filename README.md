@@ -37,4 +37,6 @@ This project was built using D3.js, Dimple.js, HTML, and CSS.
 
 A postmortem blog was written to document the design process, which can be accessed [here](https://www.mackmiller.design/blog/the-future-of-classical-music).
 
+Content last updated January 2019.
+
 
